@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+repositories {
+	maven {
+		url "https://maven.fabricmc.net/"
+	}
+}
+
+compileJava {
+	sourceCompatibility = JavaVersion.VERSION_1_8
+	targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+	implementation "net.fabricmc:fabric-loader:0.17.2"
+	runtimeOnly "net.fabricmc:sponge-mixin:0.16.4+mixin.0.8.7"
+	runtimeOnly "org.ow2.asm:asm-commons:9.9"
+}

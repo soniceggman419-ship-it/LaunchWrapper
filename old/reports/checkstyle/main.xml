@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/AppletWrapper.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/Java5Tweaker.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/AppletTweaker.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/LegacyLauncherTweak.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/Tweak.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/Tweaker.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/ServerTweak.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/FeatureInfo.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/LegacyTweak.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/VanillaTweak.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/DelCharTweaker.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/FakeAppletWrapper.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/InjectionWithContext.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/forge/ForgeFix.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/forge/ForgeVersionCheck.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/MinecraftGetter.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/vanilla/OneSixAssetsFix.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/vanilla/VanillaTweakContext.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/vanilla/OutOfFocusFullscreen.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/vanilla/OfflineSkins.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/vanilla/ChangeBrand.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/Injection.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/IndevSaving.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/UnlicensedCopyText.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/ClassicLoadingFix.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/FixShutdown.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/OptionsLoadFix.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/FixSplashScreen.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/AddMain.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/LegacyTweakContext.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/FixGrayScreen.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/MouseFix.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/ClassicCrashScreen.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/ReplaceGameDir.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/BitDepthFix.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/GameModeSwitch.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/tweak/injection/legacy/LWJGLPatch.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/Launch.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/applet/Applet.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/applet/AppletStub.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/loader/LaunchClassLoader.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/loader/SafeClassWriter.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/loader/ClassLoaderURLHandler.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/LaunchConfig.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/SaveLevelURLConnection.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/JoinServerURLConnection.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/LocalSkinURLConnection.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/URLStreamHandlerProxy.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/LoadLevelURLConnection.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/AssetURLConnection.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/MinecraftURLStreamHandler.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/SkinURLConnection.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/HeartbeatURLConnection.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/AssetRequests.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/MojangSkinProvider.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/MinecraftCapesProvider.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/LocalSkin.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/Skin.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/OptifineCapeProvider.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/SkinOption.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/LocalSkinProvider.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/CraftarSkinProvider.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/SkinTexture.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/HttpSkin.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/CloaksPlusCapeProvider.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/SkinType.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/SkinMCCapeProvider.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/ElyBySkinProvider.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/SkinRequests.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/skin/SkinProvider.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/CheckServerURLConnection.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/BasicResponseURLConnection.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/SaveRequests.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/protocol/ListLevelsURLConnection.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/target/LaunchTarget.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/target/AppletLaunchTarget.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/target/MainLaunchTarget.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/util/ClassNodeSource.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/util/ImageUtils.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/util/asm/IdentifyCall.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/util/asm/OPHelper.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/util/asm/InsnListIterator.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/util/asm/InsnHelper.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/util/asm/NodeHelper.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/util/UnsafeUtils.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/util/OS.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/util/ResourceSource.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/util/IconUtils.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/org/mcphackers/launchwrapper/util/Util.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/net/minecraft/launchwrapper/LaunchClassLoader.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/net/minecraft/launchwrapper/IClassTransformer.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/net/minecraft/launchwrapper/Launch.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/net/minecraft/launchwrapper/IClassNameTransformer.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/main/java/net/minecraft/launchwrapper/ITweaker.java">
+</file>
+</checkstyle>

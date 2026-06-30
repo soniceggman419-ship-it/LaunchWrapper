@@ -1,0 +1,152 @@
+plugins {
+	id 'java-library'
+	id 'maven-publish'
+	id 'checkstyle'
+}
+
+def ENV = System.getenv()
+
+group = 'org.mcphackers'
+version = '1.2.4'
+if(!ENV.RELEASE.equals('1')) {
+	project.version += '-SNAPSHOT'
+}
+
+def asm_version = '9.9'
+def depends = [
+	"org.ow2.asm:asm:${asm_version}",
+	// "org.ow2.asm:asm-util:${asm_version}",
+	"org.ow2.asm:asm-tree:${asm_version}",
+	"org.ow2.asm:asm-commons:${asm_version}",
+	"org.json:json:20250517",
+]
+
+dependencies {
+	testRuntimeOnly('org.junit.platform:junit-platform-launcher:1.5.2')
+	testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.0.0'
+	if(JavaVersion.current().isJava9Compatible()) {
+		compileOnly "me.eigenraven.java8unsupported:java-8-unsupported-shim:1.0.0" // sun.misc.Unsafe
+	}
+}
+
+test {
+	useJUnitPlatform()
+	testLogging {
+		exceptionFormat = 'full'
+		events = ["passed", "failed", "skipped"]
+		// showStandardStreams = true
+	}
+}
+
+checkstyle {
+	configFile = file('checkstyle.xml')
+}
+
+subprojects {
+	apply plugin: 'java'
+
+	project.group = rootProject.group
+	project.version = rootProject.version
+	
+	dependencies {
+		implementation rootProject
+		runtimeOnly rootProject.sourceSets.test.output
+	}
+}
+
+allprojects {
+	apply plugin: 'java'
+	apply plugin: 'maven-publish'
+
+	repositories {
+		maven {
+			url "https://libraries.minecraft.net/"
+		}
+		maven {
+			url "https://maven.glass-launcher.net/releases"
+		}
+		mavenCentral()
+	}
+	dependencies {
+		depends.each { depend -> implementation depend }
+	}
+
+	task sourcesJar(type: Jar) {
+		archiveClassifier = 'sources'
+		from sourceSets.main.allSource
+	}
+
+	artifacts {
+		archives jar
+		archives sourcesJar
+	}
+
+	java {
+		if (JavaVersion.current().isJava9Compatible()) {
+			sourceCompatibility = JavaVersion.VERSION_1_8
+			targetCompatibility = JavaVersion.VERSION_1_8
+		} else {
+			// Minecraft is mostly compatible with java 5 up until the version we support, so why not?
+			sourceCompatibility = JavaVersion.VERSION_1_5
+			targetCompatibility = JavaVersion.VERSION_1_5
+		}
+	}
+
+	compileJava {
+		options.encoding = "UTF-8"
+		options.compilerArgs += ["-Werror"]
+		options.fork = true
+
+		// Target Java 8 on newer JDKs
+		if (JavaVersion.current().isJava9Compatible()) {
+			options.release.set(8)
+		} else {
+			// Suppress sun.misc.Unsafe and -target 1.5 warnings on Java 8
+			options.compilerArgs += ["-XDenableSunApiLintControl"]
+		}
+		options.compilerArgs += ["-Xlint:-options"]
+	}
+
+	compileTestJava {
+		sourceCompatibility = JavaVersion.VERSION_1_8
+		targetCompatibility = JavaVersion.VERSION_1_8
+	}
+
+	afterEvaluate {
+		publishing {
+			publications {
+				mavenJava(MavenPublication) {
+					artifact jar
+					artifact sourcesJar
+				}
+			}
+
+			repositories {
+				mavenLocal()
+				
+				if (ENV.MAVEN_URL) {
+					maven {
+						url ENV.MAVEN_URL
+						if (ENV.MAVEN_USERNAME) {
+							credentials {
+								username ENV.MAVEN_USERNAME
+								password ENV.MAVEN_PASSWORD
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Fat JAR: bundles all dependencies into one runnable JAR
+jar {
+	manifest {
+		attributes 'Main-Class': 'org.mcphackers.launchwrapper.Launch'
+	}
+	from {
+		configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+	}
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

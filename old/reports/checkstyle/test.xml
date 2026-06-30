@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="/home/elijah/LaunchWrapper/src/test/java/org/mcphackers/launchwrapper/test/ReleaseTest.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/test/java/org/mcphackers/launchwrapper/test/ClassicTest.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/test/java/org/mcphackers/launchwrapper/test/BetaTest.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/test/java/org/mcphackers/launchwrapper/test/IndevTest.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/test/java/org/mcphackers/launchwrapper/test/TweakTest.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/test/java/org/mcphackers/launchwrapper/test/FileClassNodeSource.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/test/java/org/mcphackers/launchwrapper/test/AlphaTest.java">
+</file>
+<file name="/home/elijah/LaunchWrapper/src/test/java/org/mcphackers/launchwrapper/test/DebugLaunch.java">
+</file>
+</checkstyle>
