@@ -1,4 +1,4 @@
-# LaunchWrapper
+# LaunchWrapper frok
 ![image](https://user-images.githubusercontent.com/68742864/227987160-03948674-48c2-4a69-b5b8-86793462f128.png)
 
 **LaunchWrapper** is a wrapper for both legacy and modern Minecraft which provides fixes for certain game features and also improves compatibility with launchers.
